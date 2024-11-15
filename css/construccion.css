@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     background-color: var(--dark-white);
+    margin-top: 90px;
 }
 
 .construction {
@@ -48,4 +49,16 @@
 
 .construction__button:hover {
     background-color: var(--color-tertiary);
+}
+
+.construction__image {
+    max-width: 80%; 
+    height: auto;   
+    margin-bottom: 1.5rem;
+}
+
+.footer__contruction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
