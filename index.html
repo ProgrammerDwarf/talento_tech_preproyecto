@@ -307,6 +307,7 @@
             name="email"
             class="contact__input"
             required
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
           />
 
           <label for="message" class="contact__label">Mensaje:</label>
@@ -372,6 +373,7 @@
             name="email"
             placeholder="Tu correo electrónico"
             required
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
           />
           <button type="submit">Suscribirse</button>
         </form>

@@ -151,6 +151,7 @@
                 class="contact__form-input"
                 placeholder="Tu correo electrónico"
                 required
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
               />
             </div>
 
@@ -224,6 +225,8 @@
             name="email"
             placeholder="Tu correo electrónico"
             required
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            title="Por favor, ingresa un correo válido con un dominio, por ejemplo, usuario@dominio.com"
           />
           <button type="submit">Suscribirse</button>
         </form>
