@@ -12,8 +12,8 @@
     --font-primary: 'Roboto Mono', monospace;
     --font-secondary: 'Merriweather Sans', sans-serif;
 
-    --font-size-title: 1.5rem;
-    --font-size-paragraph: 1rem;
+    --font-size-title: 1.75rem;
+    --font-size-paragraph: 1.2rem;
 
     --shadow-color: 200deg 60% 60%;
     --shadow-elevation-low:
@@ -37,13 +37,16 @@
 }
 
 html{
-    font-family: var(--font-secondary);
     font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-primary);
-
+    font-size: var(--font-size-title);
+}
+/* Tamaño para otras etiquetas de texto */
+p, span, div, li, a, label, blockquote {
+    font-size: 1.1rem;
 }
 
 body {
@@ -188,12 +191,10 @@ body {
         top: 100px;
 
         & .hero__content-text h1 {
-            font-size: 1.75rem;
             margin-bottom: 1rem;
             text-align: center;
         }
         & .hero__content-text p {
-            font-size: 1rem;
             text-align: start;
         }
         /* Botón de CTA */
@@ -204,7 +205,6 @@ body {
             background-color: var(--color-primary);
             color: white;
             text-decoration: none;
-            font-size: 1.2rem;
             border-radius: 0.5rem;
             transition: background-color 0.3s ease;
         }
@@ -243,7 +243,6 @@ body {
 
 
 .main__about-us h2 {
-    font-size: var(--font-size-title);
     color: var(--color-secondary);
     margin-bottom: 0.5rem;
 }
@@ -545,6 +544,7 @@ body {
     color: var(--color-secondary); /* Título en azul oscuro */
     text-align: center;
     margin-bottom: 1.5rem;
+    scroll-margin-top: 200px;
 }
 
 .faq__item {
@@ -684,6 +684,12 @@ body {
   .footer__subscription, .footer__commitment, .footer__map,
   .footer__faq, .footer__social, .footer__legal, .footer__results {
     text-align: center;
+    text-decoration: none;
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: var(--color-light);
   }
   
   .footer__links{
