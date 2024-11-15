@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JenLab: Tu salud, nuestra prioridad</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/6f7005b94f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__logo">
+        <a class="header__logo-wrapper" href="/">
+          <img
+            class="header__logo-image"
+            src="./assets/imgs/logo-removebg-preview.png"
+            alt="site logo"
+          />
+        </a>
+      </div>
+
+      <!-- Hidden checkbox for menu toggle -->
+      <nav class="header__nav">
+        <input type="checkbox" id="menu-toggle" class="header__menu-checkbox" />
+        <label
+          for="menu-toggle"
+          class="header__menu-icon--open"
+          aria-label="Toggle menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="undefined"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+
+        <ul id="header__menu" class="header__menu">
+          <label for="menu-toggle" class="header__menu-icon--close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="undefined"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </label>
+
+          <li class="header__menu-item menu__item-home"><a href="./index.html">Inicio</a></li>
+          <li class="header__menu-item menu__item-service"><a href="./pages/servicios.html">Servicios</a></li>
+          <li class="header__menu-item menu__item-about-us"><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
+          <li class="header__menu-item menu__item-tests"><a href="./pages/perfiles-estudios.html">Perfiles y estudios</a></li>
+          <li class="header__menu-item menu__item-contact"><a href="./pages/contacto.html">Contacto</a></li>
+          <li class="header__menu-item fas fa-shopping-cart" ><a href="#"></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <video class="hero__video" autoplay loop muted playsinline>
+        <source src="./assets/videos/lab_video.mp4" type="video/mp4" />
+        Tu navegador no soporta el elemento de video.
+      </video>
+
+      <!-- Layer  oscuro para el video -->
+      <div class="hero__overlay"></div>
+
+      <!-- Contenido del hero section -->
+      <div class="hero__content">
+        <div class="hero__content-text">
+          <h1>
+            JenLab: Servicios de Análisis Clínicos Confiables y Accesibles
+          </h1>
+          <p>
+            Tu salud es nuestra prioridad. Realiza tus análisis clínicos con
+            tecnología avanzada y resultados rápidos.
+          </p>
+        </div>
+        <a class="hero__content-link" href="./pages/perfiles-estudios.html"
+          >Ver Perfiles de Análisis</a
+        >
+        <svg
+          class="hero__arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+          fill="currentColor"
+        >
+          <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+        </svg>
+      </div>
+    </section>
+
+    <main class="main">
+      <section class="main__about-us">
+        <h2>Tu salud, nuestra prioridad</h2>
+        <img
+          src="./assets/imgs/about_us.jpg"
+          class="about_us__image"
+          alt="Nuestro equipo de profesionales"
+        />
+        <h3>Nuestra misión</h3>
+        <p>
+          En JenLab, creemos que tu salud es lo más importante. Por eso, nos esforzamos por brindarte una atención personalizada y cercana, en un ambiente cálido y acogedor. Nuestro objetivo es que te sientas cómodo y seguro durante todo el proceso.
+        </p>
+        <h3>Nuestro equipo</h3>
+        <p>
+          Contamos con un equipo de profesionales de la salud comprometidos con tu bienestar. Estamos aquí para responder a todas tus preguntas y ayudarte a entender tus resultados.
+        </p>
+        <a href="nosotros.html" class="btn">Agenda una cita hoy</a>
+      </section>
+
+     <section class="main__services">
+      <h2 class="main__title">Perfiles y pruebas más solicitadas</h2>
+  
+      <div class="main__subsection-wrapper">
+          <section id="perfil-general" class="main__subsection main__cards">
+              <h3>Perfil General</h3>
+              <p>Un chequeo completo de tu salud. Este perfil incluye un panel de pruebas básicas que evalúan el funcionamiento de tus órganos principales, como el hígado, los riñones y la tiroides.</p>
+              <picture class="visual">
+                  <img src="./assets/imgs/perfil_general.jpg" alt="Imagen representativa del Perfil General">
+              </picture>
+              <button type="button">Agregar al Carrito</button>
+          </section>
+  
+          <section id="perfil-prequirurgico" class="main__subsection main__cards">
+              <h3>Perfil Prequirúrgico</h3>
+              <p>Prepárate para tu cirugía con tranquilidad. Este perfil está diseñado para evaluar tu estado de salud antes de una intervención quirúrgica.</p>
+              <picture class="visual">
+                  <img src="./assets/imgs/anemia.jpg" alt="Imagen representativa del Perfil Prequirúrgico">
+              </picture>
+              <button type="button">Agregar al Carrito</button>
+          </section>
+  
+          <section id="perfil-lipidico" class="main__subsection main__cards">
+              <h3>Perfil Lipídico</h3>
+              <p>Cuida tu corazón. Este perfil evalúa los niveles de colesterol y triglicéridos en sangre.</p>
+              <picture class="visual">
+                  <img src="./assets/imgs/perfil_lipidico.jpg" alt="Imagen representativa del Perfil Lipídico">
+              </picture>
+              <button type="button">Agregar al Carrito</button>
+          </section>
+  
+          <section id="perfil-ferrocinetico" class="main__subsection main__cards">
+              <h3>Perfil Ferrocinético</h3>
+              <p>Comprende tu metabolismo del hierro. Este perfil evalúa la forma en que tu cuerpo absorbe, utiliza y almacena el hierro.</p>
+              <picture class="visual">
+                  <img src="./assets/imgs/perfil_ferrocinetico_small.jpg" alt="Imagen representativa del Perfil Ferrocinético">
+              </picture>
+              <button class="btn" type="button">Agregar al Carrito</button>
+          </section>
+      </div>
+      </section>
+  
+      <section class="main__benefits">
+        <h2>¿Por qué elegir JenLab?</h2>
+        <div class="benefit">
+          <img
+            src="./assets/imgs/icons/lab_icon.svg"
+            alt="Icono de red de laboratorios"
+          />
+          <h3>Conexiones estratégicas</h3>
+          <p>
+            Somos parte de una red de laboratorios de prestigio, ofreciéndote un
+            amplio rango de pruebas.
+          </p>
+        </div>
+        <div class="benefit">
+          <img src="./assets/imgs/icons/quality.svg" alt="Icono de calidad" />
+          <h3>Calidad garantizada</h3>
+          <p>
+            Resultados precisos y confiables, respaldados por los estándares más
+            altos de la industria.
+          </p>
+        </div>
+        <div class="benefit">
+          <img src="./assets/imgs/icons/quick.svg" alt="Icono de velocidad" />
+          <h3>Resultados rápidos</h3>
+          <p>
+            Obtén tus resultados en tiempo récord para tomar decisiones
+            informadas.
+          </p>
+        </div>
+        <div class="benefit">
+          <img
+            src="./assets/imgs/icons/important.svg"
+            alt="Icono de atención personalizada"
+          />
+          <h3>Atención personalizada</h3>
+          <p>Nuestro equipo te brinda un servicio cercano y personalizado.</p>
+        </div>
+      </section>
+
+      <section class="main__testimonial">
+        <h2>Lo Que Dicen Nuestros Clientes</h2>
+        <div class="testimonial">
+          <img src="./assets/imgs/avatar_1.jpg" alt="Avatar de Ana G." />
+          <blockquote>
+            <p>
+              “Servicio rápido y confiable. Los resultados fueron precisos y me
+              dieron tranquilidad.”
+            </p>
+            <cite>- Ana G., cliente satisfecha</cite>
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <img src="./assets/imgs/avatar_2.jpg" alt="Avatar de Carlos M." />
+          <blockquote>
+            <p>
+              “Excelente atención y asesoría. Recomiendo totalmente sus
+              servicios.”
+            </p>
+            <cite>- Carlos M., cliente habitual</cite>
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <img src="./assets/imgs/avatar_3.jpg" alt="Avatar de Laura R." />
+          <blockquote>
+            <p>
+              “Resultados rápidos y precisos, el personal muy atento y
+              profesional.”
+            </p>
+            <cite>- Laura R., paciente recurrente</cite>
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <img src="./assets/imgs/avatar_4.jpg" alt="Avatar de Javier T." />
+          <blockquote>
+            <p>
+              “Profesionalismo y exactitud en cada prueba, me siento en buenas
+              manos.”
+            </p>
+            <cite>- Javier T., cliente nuevo</cite>
+          </blockquote>
+        </div>
+        <a href="testimonios.html">Ver Más Opiniones</a>
+      </section>
+
+      <section class="main__FAQ">
+        <h2 id="#faq" class="faq__title">Preguntas Frecuentes</h2>
+        <div class="faq__item">
+          <h3 class="faq__question">
+            ¿Cuánto tiempo tardan en entregar los resultados?
+          </h3>
+          <p class="faq__answer">
+            Generalmente, los resultados están disponibles en un plazo de 24 a
+            48 horas.
+          </p>
+        </div>
+        <div class="faq__item">
+          <h3 class="faq__question">¿Cómo puedo agendar una cita?</h3>
+          <p class="faq__answer">
+            Puedes agendar una cita directamente en nuestro sitio web o llamando
+            al <a href="tel:+58 212222-32-55.">+58 212222-32-55.</a>
+          </p>
+        </div>
+        <a href="faqs.html" class="faq__link">Ver todas las preguntas</a>
+      </section>
+
+      <section class="main__contact">
+        <h2 class="contact__title">Contáctanos</h2>
+        <p class="contact__info">
+          <strong>Teléfono:</strong>
+          <a href="tel:+58 212222-32-88.">+58 212222-32-88.</a><br />
+          <strong>Dirección:</strong> Av. El Centro, Los Dos Caminos, Estado
+          Miranda, Venezuela<br />
+          <strong>Horario de Atención:</strong> Lunes a Viernes, 8:00 am - 6:00
+          pm
+        </p>
+        <form
+          action="https://formspree.io/f/xldenkwk"
+          method="POST"
+          class="contact__form"
+        >
+          <label for="name" class="contact__label">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="contact__input"
+            required
+          />
+
+          <label for="email" class="contact__label">Correo Electrónico:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="contact__input"
+            required
+          />
+
+          <label for="message" class="contact__label">Mensaje:</label>
+          <textarea
+            id="message"
+            name="message"
+            class="contact__textarea"
+            rows="4"
+            required
+          ></textarea>
+
+          <button type="submit" class="contact__button">Enviar Mensaje</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="footer__contact">
+        <p>📍 Dirección: Avenida El Centro, Los dos Caminos, Caracas</p>
+        <p>
+          📞 Teléfono Call center:<a href="tel:+58 212222-32-99."
+            >+58 212222-32-99.</a
+          >
+        </p>
+        <p>✉️ Correo electrónico: contacto@jenlab.com</p>
+      </section>
+
+      <section class="footer__hours">
+        <p><strong>Horarios de atención:</strong></p>
+        <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+        <p>Sábado: 9:00 AM - 1:00 PM</p>
+      </section>
+
+      <nav class="footer__links">
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./pages/servicios.html">Servicios</a></li>
+          <li><a href="./pages/sobre-nosotros.html">Equipo Médico</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li><a href="#">Resultados en Línea</a></li>
+        </ul>
+      </nav>
+
+      <section class="footer__certifications">
+        <p>
+          🔬 Certificados ISO 9001 y 15189 | Miembro de la Asociación Nacional
+          de Laboratorios Clínicos
+        </p>
+      </section>
+
+      <section class="footer__results">
+        <a href="#resultados" class="footer__button">Consulta de Resultados</a>
+      </section>
+
+      <section class="footer__subscription">
+        <p>
+          Suscríbete a nuestro boletín para recibir novedades y consejos de
+          salud:
+        </p>
+        <form action="https://formspree.io/f/meoqkwpj" method="post">
+          <input
+            type="email"
+            name="email"
+            placeholder="Tu correo electrónico"
+            required
+          />
+          <button type="submit">Suscribirse</button>
+        </form>
+      </section>
+
+      <section class="footer__commitment">
+        <p>
+          "Comprometidos con la precisión y el bienestar de nuestros pacientes"
+        </p>
+      </section>
+
+      <section class="footer__map">
+        <p>
+          <a href="https://maps.app.goo.gl/6vGYc1nSzktaPjr19" target="_blank"
+            >Ver ubicación en Google Maps</a
+          >
+        </p>
+      </section>
+
+      <section class="footer__faq">
+        <a href="#faq">Preguntas Frecuentes</a>
+      </section>
+
+      <section class="footer__social">
+        <a href="https://facebook.com/jenlab" target="_blank">
+            <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://instagram.com/jenlab" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://linkedin.com/company/jenlab" target="_blank">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+    </section>
+
+      <section class="footer__legal">
+        <a href="#privacidad">Política de Privacidad</a>
+        <a href="#terminos">Términos de Servicio</a>
+      </section>
+
+      <section class="footer__copyright">
+        <p>© 2024 JenLab. Todos los derechos reservados.</p>
+      </section>
+    </footer>
+  </body>
+</html>

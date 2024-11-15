@@ -1,0 +1,272 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JenLab - Contacto</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/contacto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6f7005b94f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <a class="header__logo-wrapper" href="/">
+          <img
+            class="header__logo-image"
+            src="../assets/imgs/logo-removebg-preview.png"
+            alt="site logo"
+          />
+        </a>
+      </div>
+
+      <!-- Hidden checkbox for menu toggle -->
+      <nav class="header__nav">
+        <input type="checkbox" id="menu-toggle" class="header__menu-checkbox" />
+        <label
+          for="menu-toggle"
+          class="header__menu-icon--open"
+          aria-label="Toggle menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="undefined"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+
+        <ul id="header__menu" class="header__menu">
+          <label for="menu-toggle" class="header__menu-icon--close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="undefined"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </label>
+
+          <li class="header__menu-item menu__item-home">
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li class="header__menu-item menu__item-service">
+            <a href="./servicios.html">Servicios</a>
+          </li>
+          <li class="header__menu-item menu__item-about-us">
+            <a href="./sobre-nosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="header__menu-item menu__item-tests">
+            <a href="./perfiles-estudios.html">Perfiles y estudios</a>
+          </li>
+          <li class="header__menu-item menu__item-contact">
+            <a href="./contacto.html">Contacto</a>
+          </li>
+          <li class="header__menu-item fas fa-shopping-cart">
+            <a href="#"></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="main__contact">
+      <section class="contact">
+        <div class="contact__intro">
+          <h1 class="contact__title">Contáctanos</h1>
+          <p class="contact__description">
+            Estamos aquí para responder tus preguntas y brindarte toda la
+            información que necesitas. ¡No dudes en contactarnos!
+          </p>
+        </div>
+
+        <div class="contact__details">
+          <div class="contact__info">
+            <h2 class="contact__info-title">Información de Contacto</h2>
+            <ul class="contact__info-list">
+              <li class="contact__info-item">
+                <i class="fas fa-map-marker-alt"></i> Avenida El Centro, Los dos
+                Caminos, Caracas
+              </li>
+              <li class="contact__info-item">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+582122223299">+58 212 222-32-99</a>
+              </li>
+              <li class="contact__info-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:contacto@jenlab.com">contacto@jenlab.com</a>
+              </li>
+              <li class="contact__info-item">
+                <i class="fas fa-clock"></i> Lunes a Viernes: 8:00 AM - 6:00 PM
+                | Sábado: 9:00 AM - 1:00 PM
+              </li>
+            </ul>
+          </div>
+
+          <form
+            class="contact__form"
+            action="https://formspree.io/f/xldenkwk"
+            method="POST"
+          >
+            <h2 class="contact__form-title">Envíanos un mensaje</h2>
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Nombre</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="contact__form-input"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label"
+                >Correo Electrónico</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="contact__form-input"
+                placeholder="Tu correo electrónico"
+                required
+              />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                class="contact__form-textarea"
+                placeholder="Escribe tu mensaje aquí..."
+                required
+              ></textarea>
+            </div>
+
+            <input type="hidden" name="_captcha" value="false" />
+            <button type="submit" class="contact__form-button">
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <section class="footer__contact">
+        <p>📍 Dirección: Avenida El Centro, Los dos Caminos, Caracas</p>
+        <p>
+          📞 Teléfono Call center:<a href="tel:+58 212222-32-99."
+            >+58 212222-32-99.</a
+          >
+        </p>
+        <p>✉️ Correo electrónico: contacto@jenlab.com</p>
+      </section>
+
+      <section class="footer__hours">
+        <p><strong>Horarios de atención:</strong></p>
+        <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+        <p>Sábado: 9:00 AM - 1:00 PM</p>
+      </section>
+
+      <nav class="footer__links">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./sobre-nosotros.html">Equipo Médico</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="#">Resultados en Línea</a></li>
+        </ul>
+      </nav>
+
+      <section class="footer__certifications">
+        <p>
+          🔬 Certificados ISO 9001 y 15189 | Miembro de la Asociación Nacional
+          de Laboratorios Clínicos
+        </p>
+      </section>
+
+      <section class="footer__results">
+        <a href="#resultados" class="footer__button">Consulta de Resultados</a>
+      </section>
+
+      <section class="footer__subscription">
+        <p>
+          Suscríbete a nuestro boletín para recibir novedades y consejos de
+          salud:
+        </p>
+        <form action="https://formspree.io/f/meoqkwpj" method="post">
+          <input
+            type="email"
+            name="email"
+            placeholder="Tu correo electrónico"
+            required
+          />
+          <button type="submit">Suscribirse</button>
+        </form>
+      </section>
+
+      <section class="footer__commitment">
+        <p>
+          "Comprometidos con la precisión y el bienestar de nuestros pacientes"
+        </p>
+      </section>
+
+      <section class="footer__map">
+        <p>
+          <a href="https://maps.app.goo.gl/6vGYc1nSzktaPjr19" target="_blank"
+            >Ver ubicación en Google Maps</a
+          >
+        </p>
+      </section>
+
+      <section class="footer__faq">
+        <a href="#faq">Preguntas Frecuentes</a>
+      </section>
+
+      <section class="footer__social">
+        <a href="https://facebook.com/jenlab" target="_blank">
+          <i class="fab fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://instagram.com/jenlab" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://linkedin.com/company/jenlab" target="_blank">
+          <i class="fab fa-linkedin-in"></i> LinkedIn
+        </a>
+      </section>
+
+      <section class="footer__legal">
+        <a href="#privacidad">Política de Privacidad</a>
+        <a href="#terminos">Términos de Servicio</a>
+      </section>
+
+      <section class="footer__copyright">
+        <p>© 2024 JenLab. Todos los derechos reservados.</p>
+      </section>
+    </footer>
+  </body>
+</html>

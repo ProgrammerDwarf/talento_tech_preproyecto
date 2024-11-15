@@ -1,0 +1,10 @@
+.main{
+    position: relative;
+    margin-top: 100px;
+
+    & .main__services{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
