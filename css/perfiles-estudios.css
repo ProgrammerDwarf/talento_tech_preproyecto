@@ -1,26 +1,18 @@
-.tests__wrapper{
-    margin: 100px 0 50px;
-    display: flex;
-
-    
-}
-
-
 .section {
     background-color: var(--color-light);
     padding: 1.5rem;
-    margin-bottom: 2rem;
+    margin-top: 100px;
     border-radius: 8px;
     box-shadow: var(--shadow-elevation-low);
     flex: 1 1 100px;
-    height: 100vh;
+    height: auto;
 }
 
 .section__title {
     color: var(--color-secondary);
     font-family: var(--font-primary);
     font-size: var(--font-size-title);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .test-list {
@@ -64,7 +56,7 @@
 
 /* Botón de compra */
 .test-list__button {
-    display: inline-block;
+    display: block;
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
     background-color: var(--color-primary);
@@ -77,21 +69,29 @@
     text-align: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: var(--shadow-elevation-low);
-    max-width: 30%;
+    max-width: 50%;
+    align-self: center;
+
 }
 
 .test-list__button:hover {
     background-color: var(--color-tertiary);
     transform: translateY(-2px);
-@media (min-width: 449px) {
-    .tests__wrapper{
-        margin: 100px 0 50px;
-        display: flex; 
-    }
+}
 
-    .test-list__button {
-        max-width: 30%;
+
+@media (min-width: 449px) {
+    .section {
+        max-width: 80%;
+        margin: 100px auto;
     }
     
+    
+    
+    .test-list__button {
+        max-width: 50%;
+        }
+    
 }
-}
+
+
