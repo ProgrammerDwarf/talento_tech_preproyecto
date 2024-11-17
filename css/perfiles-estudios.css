@@ -77,9 +77,21 @@
     text-align: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: var(--shadow-elevation-low);
+    max-width: 30%;
 }
 
 .test-list__button:hover {
     background-color: var(--color-tertiary);
     transform: translateY(-2px);
+@media (min-width: 449px) {
+    .tests__wrapper{
+        margin: 100px 0 50px;
+        display: flex; 
+    }
+
+    .test-list__button {
+        max-width: 30%;
+    }
+    
+}
 }
