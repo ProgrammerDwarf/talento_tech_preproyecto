@@ -12,8 +12,8 @@
     --font-primary: 'Roboto Mono', monospace;
     --font-secondary: 'Merriweather Sans', sans-serif;
 
-    --font-size-title: 1.75rem;
-    --font-size-paragraph: 1.2rem;
+    --font-size-title: 1.5rem;
+    --font-size-paragraph: 1rem;
 
     --shadow-color: 200deg 60% 60%;
     --shadow-elevation-low:
@@ -80,11 +80,12 @@ body {
     & .header__nav {
   
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;        
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;        
         width: 100%;
         height: 100px;
+        margin-right: 1rem;
 
         & .header__menu {
             display: flex;
@@ -107,7 +108,7 @@ body {
             & .header__menu-item{
                 display: flex;
                 width: 100%;
-                padding: 20px 30px;
+                padding: 1.5rem 0 
             }
             & .header__menu-item:hover{
                 color: var(--color-light);
@@ -160,6 +161,7 @@ body {
         left: 0;
         width: 100vw;
         object-fit: cover;
+        /* aspect-ratio: 9/16; */
         /* para situarlo antes del titulo y contenido */
         z-index: 1;
     }
@@ -182,13 +184,13 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: calc(100vh - 200px);
+        height: calc(100vh - 250px);
         width: 100%;
         text-align: center;
-        padding: 0 20px;
+        padding: 0 10px;
         z-index: 3; /* Encima del overlay */
         /* background-color: red; */
-        gap: 5rem;
+        gap: 3rem;
         top: 100px;
 
         & .hero__content-text h1 {
@@ -203,6 +205,7 @@ body {
             display: inline-block;
             width: auto;
             padding: 0.5em 1.2em;
+            margin-bottom: 1rem;
             background-color: var(--color-primary);
             color: white;
             text-decoration: none;
@@ -966,6 +969,10 @@ body {
 
 
 @media (min-width: 1024px) {
+    :root{
+        --font-size-title: 1.75rem;
+        --font-size-paragraph: 1.2rem;
+    }
     .header .header__nav .header__menu{
         width: 20%;
     }
@@ -1017,5 +1024,19 @@ body {
     margin-top: 1rem;
     }
 }
+
+@media (orientation: portrait) {
+    /* Estilos para modo retrato */
+    .hero__video {
+      aspect-ratio: 9 / 16;
+    }
+  }
+  
+  @media (orientation: landscape) {
+    /* Estilos para modo paisaje */
+    .hero__video {
+        aspect-ratio: 9 / 16;
+      }
+  }
 
   
