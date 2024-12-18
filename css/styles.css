@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: var(--font-size-title);
 }
 /* Tamaño para otras etiquetas de texto */
-p, span, div, li, a, label, blockquote {
+p, span, div, li, a, label, blockquote, button {
     font-family: var(--font-secondary);
     font-size: var(--font-size-paragraph);
 }
