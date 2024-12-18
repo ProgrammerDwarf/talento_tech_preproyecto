@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JenLab - Perfiles y pruebas</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,65 +18,67 @@
     ></script>
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <!-- Imagen del sitio -->
-          <a class="navbar-brand" href="../index.html">
-            <img
-              src="../assets/imgs/logo-removebg-preview.png"
-              alt="site logo"
-              class="d-inline-block align-text-top"
-              style="height: 40px"
-            />
-          </a>
-
-          <!-- Toggle para ver cuando la pantalla sea para dispositivos moviles -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Menú de navegación -->
-          <div class="collapse navbar-collapse d-lg-flex" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sobre-nosotros.html"
-                  >Sobre nosotros</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="perfiles-estudios.html"
-                  >Perfiles y estudios</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fas fa-shopping-cart"></i>
-                </a>
-              </li>
-            </ul>
+       <!-- Header -->
+       <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../assets/imgs/logo-removebg-preview.png"
+                alt="site logo"
+                class="d-inline-block align-text-top"
+                style="height: 40px"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-lg-flex" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre-nosotros.html"
+                    >Sobre nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="perfiles-estudios.html"
+                    >Perfiles y estudios</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalCarrito"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count" class="carrito-contador"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
+  
 
     <section class="section-profile section--content">
       <h2 class="section__title">
@@ -84,61 +86,48 @@
       </h2>
       <ul class="test-list">
         <li class="test-list__item">
-          <span class="test-list__name">Hematología completa:</span>
-          <p class="test-list__description">
-            Evalúa la salud general de la sangre.
-          </p>
-          <p class="test-list__recommendation">
-            <strong>Recomendación:</strong> Ayunas 2 horas antes.
-          </p>
-          <p class="test-list__price">
-            <strong>Precio:</strong> $50.00
-          </p>
-          <button class="btn btn-primary">Añadir al carrito</button>
+            <span class="test-list__name">Hematología completa:</span>
+            <p class="test-list__description">Evalúa la salud general de la sangre.</p>
+            <p class="test-list__recommendation"><strong>Recomendación:</strong> Ayunas 2 horas antes.</p>
+            <p class="test-list__price"><strong>Precio:</strong> $50.00</p>
+            <button class="btn btn-primary" 
+                    data-idProducto="1" 
+                    data-nombre="Hematología completa" 
+                    data-precio="50">Añadir al carrito</button>
         </li>
         <li class="test-list__item">
-          <span class="test-list__name">Perfil metabólico básico:</span>
-          <p class="test-list__description">
-            Evalúa la función renal y hepática, niveles de azúcar y electrolitos.
-          </p>
-          <p class="test-list__recommendation">
-            <strong>Recomendación:</strong> Ayunas 8 horas antes.
-          </p>
-          <p class="test-list__price">
-            <strong>Precio:</strong> $70.00
-          </p>
-          <button class="btn btn-primary">Añadir al carrito</button>
+            <span class="test-list__name">Perfil metabólico básico:</span>
+            <p class="test-list__description">Evalúa la función renal y hepática, niveles de azúcar y electrolitos.</p>
+            <p class="test-list__recommendation"><strong>Recomendación:</strong> Ayunas 8 horas antes.</p>
+            <p class="test-list__price"><strong>Precio:</strong> $70.00</p>
+            <button class="btn btn-primary" 
+                    data-idProducto="2" 
+                    data-nombre="Perfil metabólico básico" 
+                    data-precio="70">Añadir al carrito</button>
         </li>
         <li class="test-list__item">
-          <span class="test-list__name">Perfil Ferrocinético:</span>
-          <p class="test-list__description">
-            Evalúa la cinética del hierro en el organismo.
-          </p>
-          <p class="test-list__recommendation">
-            <strong>Recomendación:</strong> No es necesario ayuno.
-          </p>
-          <p class="test-list__price">
-            <strong>Precio:</strong> $60.00
-          </p>
-          <button class="btn btn-primary">Añadir al carrito</button>
+            <span class="test-list__name">Perfil Ferrocinético:</span>
+            <p class="test-list__description">Evalúa la cinética del hierro en el organismo.</p>
+            <p class="test-list__recommendation"><strong>Recomendación:</strong> No es necesario ayuno.</p>
+            <p class="test-list__price"><strong>Precio:</strong> $60.00</p>
+            <button class="btn btn-primary"
+                    data-idProducto="3"
+                    data-nombre="Perfil Ferrocinético"
+                    data-precio="60">Añadir al carrito</button>
         </li>
         <li class="test-list__item">
-          <span class="test-list__name">Perfil Lipídico:</span>
-          <p class="test-list__description">
-            Evalúa la concentración de los distintos tipos de grasas en sangre.
-          </p>
-          <p class="test-list__recommendation">
-            <strong>Recomendación:</strong> Ayunas 12 horas antes.
-          </p>
-          <p class="test-list__price">
-            <strong>Precio:</strong> $80.00
-          </p>
-          <button class="btn btn-primary">Añadir al carrito</button>
+            <span class="test-list__name">Perfil Lipídico:</span>
+            <p class="test-list__description">Evalúa la concentración de los distintos tipos de grasas en sangre.</p>
+            <p class="test-list__recommendation"><strong>Recomendación:</strong> Ayunas 12 horas antes.</p>
+            <p class="test-list__price"><strong>Precio:</strong> $80.00</p>
+            <button class="btn btn-primary"
+                    data-idProducto="4"
+                    data-nombre="Perfil Lipídico"
+                    data-precio="80">Añadir al carrito</button>
         </li>
-      </ul>
+    </ul>
+      
     </section>
-    
-
 
     <!-- Footer -->
     <footer class="footer">
@@ -176,7 +165,9 @@
       </section>
 
       <section class="footer__results">
-        <a href="./contruccion.html" class="btn btn-primary">Consulta de Resultados</a>
+        <a href="./contruccion.html" class="btn btn-primary"
+          >Consulta de Resultados</a
+        >
       </section>
 
       <section class="footer__subscription">
@@ -216,15 +207,15 @@
 
       <section class="footer__social">
         <a href="https://facebook.com/jenlab" target="_blank">
-            <i class="fab fa-facebook-f"></i> Facebook
+          <i class="fab fa-facebook-f"></i> Facebook
         </a>
         <a href="https://instagram.com/jenlab" target="_blank">
-            <i class="fab fa-instagram"></i> Instagram
+          <i class="fab fa-instagram"></i> Instagram
         </a>
         <a href="https://linkedin.com/company/jenlab" target="_blank">
-            <i class="fab fa-linkedin-in"></i> LinkedIn
+          <i class="fab fa-linkedin-in"></i> LinkedIn
         </a>
-    </section>
+      </section>
 
       <section class="footer__legal">
         <a href="./contruccion.html">Política de Privacidad</a>
@@ -236,5 +227,6 @@
       </section>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/carrito.js"></script>
   </body>
 </html>
