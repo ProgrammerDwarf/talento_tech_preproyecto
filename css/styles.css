@@ -706,6 +706,13 @@ body {
     margin: 0.5rem 0;
 }
 
+.test-list__price {
+    font-size: var(--font-size-paragraph);
+    color: var(--color-primary);
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
 .section--general-recommendations .recommendations-list {
     list-style-type: disc;
     padding-left: 20px;
@@ -715,6 +722,7 @@ body {
     margin-bottom: 0.75rem;
     font-size: var(--font-size-paragraph);
 }
+
 /* ===============FIN DE PERFILES Y ESTUDIOS====================== */
 /* ================== COMIENZO PAGINA DE CONTACTO================= */
 /* Estilos generales para el main */
